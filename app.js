@@ -61,7 +61,7 @@ function dlt(x){
 }
 
 function edit(x){
-    if(change == "edit"){
+    if(change == "edit" && x.innerHTML == "Edit"){
     var para = x.parentElement.parentElement.firstChild
     var editInput = document.createElement("input")
     editInput.setAttribute("id", "editInput")
@@ -73,7 +73,7 @@ function edit(x){
     editInput.value= val
     x.innerHTML= "Update"
     change = "update"
-    }else if(change == "update"){
+    }else if(change == "update" && x.innerHTML == "Update"){
         var para = x.parentElement.parentElement.firstChild
         var val = para.firstChild.value 
         para.innerHTML = "* "+val

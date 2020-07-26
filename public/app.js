@@ -76,9 +76,15 @@ function edit(x){
     }else if(change == "update" && x.innerHTML == "Update"){
         var para = x.parentElement.parentElement.firstChild
         var val = para.firstChild.value 
-        para.innerHTML = "* "+val
-        x.innerHTML= "Edit"
-        change = "edit"
+        if(val == ""){
+            alert("Empty task cann't be update!")
+        }else{
+            para.innerHTML = "* "+val
+            x.innerHTML= "Edit"
+            change = "edit"
+
+        }
+        
         
 
 

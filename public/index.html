@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do Application</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDB68cMk_vMfw1zoXZxnH4mkxD4dkgWCvc",
+          authDomain: "to-do-application-10.firebaseapp.com",
+          databaseURL: "https://to-do-application-10.firebaseio.com",
+          projectId: "to-do-application-10",
+          storageBucket: "to-do-application-10.appspot.com",
+          messagingSenderId: "88356207168",
+          appId: "1:88356207168:web:29d02dc3f14284f906bda5",
+          measurementId: "G-1PL1BD3FSM"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+      </script>
 </head>
 <body>
     <div id="main">
